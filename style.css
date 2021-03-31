@@ -39,22 +39,17 @@ p{
     overflow: hidden;
     text-align: center;
     opacity: 0.8;
-    padding-top: 4rem;
-    background-image: url(./images/pattern-quotes.svg);
-    background-repeat: no-repeat;
-    background-size: 6rem;
-    background-position: center 1.5rem;
+    margin: 3rem auto;
 }
 h5{
     color: var(--primary-1);
     font-size: var(--text-md);
-    margin-top: 1rem;
 }
 h6{
     color: var(--primary-2);
     font-size: var(--text-s);
     margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
+   
 }
 .main{
    max-width: 100vw;
@@ -98,10 +93,14 @@ h6{
     width: 100%;
     height: 100%;
 }
-
+.testimonial--container{
+    background-image: url(./images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: 6rem;
+    background-position: center 0.8rem;
+    opacity: 0.8;
+}
 .testimonial--info{
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,7 +135,7 @@ h6{
 }
 .btn-next:hover img,
 .btn-prev:hover img{
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 
 .footer{
@@ -144,3 +143,39 @@ h6{
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/*On Tablet View*/
+@media only screen and (min-width: 768px){
+    .slide{
+        width: 100%;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    p{
+        text-align: left;
+    }
+    .testimonial--info{
+        align-items: flex-start;
+    }
+    .testimonial--container{
+        width: 60%;
+        margin-left: 3rem;
+    }
+    .img--container{
+        width: 420px;
+        height: 420px;
+       margin-left: -100px;
+       padding: 60px;
+       z-index: -1;
+    }
+    .img--container img{
+        width: 100%;
+        height: 100%;
+    }
+    .btn--container{
+        top: 450px;
+        transform: translateX(0);
+        left: calc(100% - 250px);
+    }
+}
