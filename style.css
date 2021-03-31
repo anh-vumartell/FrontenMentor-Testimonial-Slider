@@ -64,7 +64,6 @@ h6{
     display: flex;
     overflow: hidden;
     
-    
 } 
 .slide{
     width: 100%;
@@ -147,7 +146,6 @@ h6{
 /*On Tablet View*/
 @media only screen and (min-width: 768px){
     .slide{
-        width: 100%;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: center;
@@ -165,7 +163,6 @@ h6{
     .img--container{
         width: 420px;
         height: 420px;
-       margin-left: -100px;
        padding: 60px;
        z-index: -1;
     }
@@ -178,4 +175,30 @@ h6{
         transform: translateX(0);
         left: calc(100% - 250px);
     }
+}
+/*On Desktop view*/
+@media only screen and (min-width: 950px){
+    .slider{
+        justify-content: center;
+        align-items: center;
+    }
+    .slide{
+        width: 100%;
+    }
+    .img--container{
+        width: 550px;
+        height: 550px;
+        padding: 80px;
+    }
+    .testimonial--container{
+        width: 35%;
+        margin-left: 200px;
+    }
+    .btn--container{
+        top: 490px;
+        transform: translateX(0);
+        left: calc(100% - 650px);
+        height: 3.2rem;
+    }
+
 }
