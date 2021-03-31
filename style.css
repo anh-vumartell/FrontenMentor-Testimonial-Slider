@@ -43,7 +43,7 @@ p{
     background-image: url(./images/pattern-quotes.svg);
     background-repeat: no-repeat;
     background-size: 6rem;
-    background-position: center top;
+    background-position: center 1.5rem;
 }
 h5{
     color: var(--primary-1);
@@ -75,7 +75,7 @@ h6{
     width: 100%;
     height: 30rem;
     position: absolute;
-    top: 7rem;
+    top: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,8 +84,8 @@ h6{
 }
 
 .img--container{
-    width: 360px;
-    height: 360px;
+    width: 345px;
+    height: 345px;
     margin: 0 auto;    
     padding: 40px; 
     background-image: url(./images/pattern-bg.svg);
@@ -109,6 +109,9 @@ h6{
 }
 .btn--container{
     position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    top: 22rem;
     width: 7rem;
     height: 3.5rem;
     display: flex;
@@ -116,9 +119,6 @@ h6{
     background-color:#fff;
     border-radius: 25px;
     box-shadow: 2px 5px 12px rgb(218, 214, 214);
-    z-index: 1;
-    top: 45%;
-    left: 35%;
 
 }
 .btn--container .btn{
@@ -128,6 +128,15 @@ h6{
     outline: none;
     cursor: pointer;
     font-size: var(--text-xs);
+}
+
+.btn-next img,
+.btn-prev img{
+    transition: transform 0.4s ease;
+}
+.btn-next:hover img,
+.btn-prev:hover img{
+    transform: scale(1.2);
 }
 
 .footer{
