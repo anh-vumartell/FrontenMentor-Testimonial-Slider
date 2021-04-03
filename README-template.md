@@ -53,7 +53,8 @@ Users should be able to:
 </div>
 ```
 ```
-- Using background-position: 
+
+- Using background-position property: 
 
 ```css
 ```jsx
