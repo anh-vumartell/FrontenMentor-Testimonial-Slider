@@ -24,11 +24,6 @@ html {
   font-size: 80%;
 }
 body {
-  /* min-height: 100vh; */
-  /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
   font-weight: 300;
   color: var(--primary-1);
 }
@@ -55,16 +50,16 @@ h6 {
   margin: 0 auto;
 }
 .slider {
-  max-width: 100vw;
+  max-width: 90vw;
   height: 100vh;
-  margin: 1.5rem 1rem;
+  margin: 0 1.5rem;
   position: relative;
   display: flex;
   overflow: hidden;
 }
 .slide {
   width: 100%;
-  height: 100%;
+  height: 95%;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -74,27 +69,30 @@ h6 {
 }
 
 .img--container {
-  width: 343px;
-  height: 343px;
+  width: 260px;
+  height: 260px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 25px;
+  object-fit: contain;
   background-image: url(./images/pattern-bg.svg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 324px;
+  background-size: contain;
+  background-position: contain; 
+  position: relative; 
 }
 
 .img--container img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 .testimonial--container {
   width: 100%;
-  height: 50%;
+  margin-top: 0.5rem;
   background-image: url(./images/pattern-quotes.svg);
   background-repeat: no-repeat;
-  background-size: 5.5rem;
-  background-position: center 0.2rem;
+  background-size: 4rem;
+  background-position: center 1.2rem;
   opacity: 0.8;
 }
 .testimonial--info {
@@ -107,13 +105,13 @@ h6 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 22rem;
-  width: 7rem;
-  height: 3.5rem;
+  top: 19rem;
+  width: 6.5rem;
+  height: 3rem;
   display: flex;
   justify-content: center;
   background-color: #fff;
-  border-radius: 25px;
+  border-radius: 50px;
   box-shadow: 2px 5px 12px rgb(218, 214, 214);
 }
 .btn--container .btn {
@@ -122,11 +120,11 @@ h6 {
   padding: 1rem 1.3rem;
   outline: none;
   cursor: pointer;
-  font-size: var(--text-xs);
 }
 
 .btn-next img,
 .btn-prev img {
+  width: 100%;
   transition: transform 0.4s ease;
 }
 .btn-next:hover img,
@@ -171,10 +169,13 @@ h6 {
   }
   .img--container {
     width: 480px;
-    height: 400px;
-    padding: 70px;
+    height: 480px;
     background-size: contain;
+    background-position: center 60px;
     z-index: -1;
+  }
+  .testimonial--container {
+    background-position: left 0.5rem;
   }
   .img--container img {
     width: 100%;
@@ -187,7 +188,7 @@ h6 {
   }
 }
 /*On Desktop view*/
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
   .slider {
     justify-content: center;
     align-items: center;
@@ -196,13 +197,15 @@ h6 {
     width: 100%;
     padding: 0 6rem;
   }
-  .testimonial--container {
-    background-position: center 9.5rem;
-  }
   .img--container {
-    width: 560px;
-    height: 500px;
-    margin-left: -150px;
+    width: 600px;
+    height: 600px;
+    padding: 20px;
+    background-position: center 100px;
+    margin-left: -60px;
+  }
+  .img--container img{
+    object-fit: contain;
   }
   .btn--container {
     top: 580px;
