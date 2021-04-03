@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/testimonial-slider-mobilefirst-workflow-QF1n5_DqK)
-- Live Site URL: (https://testimonial-slider-avm.netlify.app/)
+- Solution URL: [Link to my solution](https://www.frontendmentor.io/solutions/testimonial-slider-mobilefirst-workflow-QF1n5_DqK)
+- Live Site URL: [Link to my live site] (https://testimonial-slider-avm.netlify.app/)
 
 ## My process
 
