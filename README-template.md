@@ -36,15 +36,13 @@ Users should be able to:
 - Group elements in one <div>
 
 ```html
-```jsx
+```
 <div class="testimonial--info">
 ```
-
-```jsx
+```
 <h5>Tanya Sinclair</h5>
 ```
-
-```jsx
+```
 <h6> UX Engineer</h6>
 ```
 
