@@ -2,22 +2,6 @@
 
 This is a solution to the [Coding bootcamp testimonials slider challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -31,18 +15,10 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Link to my solution](https://www.frontendmentor.io/solutions/testimonial-slider-mobilefirst-workflow-QF1n5_DqK)
+- Live Site URL: [Link to my live site] (https://testimonial-slider-avm.netlify.app/)
 
 ## My process
 
@@ -51,43 +27,65 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+- Set up html template with appropriate parents and child elements
+- Setting max-width on the container of the page
+- Using flex box and its associated properties such as top, left to position and absolute element
+- Group elements in one <div>
+- Write media queries to achieve resposiveness on different devices
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+```jsx
+<div class="testimonial--info">
 ```
+
+```jsx
+<h5>Tanya Sinclair</h5>
+```
+
+```jsx
+<h6> UX Engineer</h6>
+```
+
+```jsx
+</div>
+```
+```
+
+- Using background-position property: 
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+```jsx
+*background-image*: url(*./images/pattern-curve.svg*);
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+```jsx
+*background-repeat*: no-repeat;
+```
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```jsx
+*background-position*: center bottom;
+```
 
-### Continued development
+```jsx
+*background-size*: contain;
+```
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+```jsx
+*font-size*: 80%;
+```
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+```jsx
+}
+```
+```
+
+### Remaining issues
+- How to position buttons effectively
+- Using different units in CSS file, is it good or bad practice?
+- How to posisition background-image on a <div> element
 
 ### Useful resources
 
@@ -98,14 +96,9 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Frontend Mentor - [@anh-vumartell](https://www.frontendmentor.io/profile/anh-vumartell)
+- Twitter - [@AnhVuMartell](https://www.twitter.com/AnhVuMartell)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
