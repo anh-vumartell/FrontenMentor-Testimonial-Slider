@@ -33,8 +33,8 @@ Users should be able to:
 - Set up html template with appropriate parents and child elements
 - Setting max-width on the container of the page
 - Using flex box and its associated properties such as top, left to position and absolute element
-- Group elements in one <div>
-- Write media queries to achieve resposiveness on different devices
+- Group elements in one div element
+- Write media queries to achieve responsiveness on different devices
 
 ```html
 ```jsx
