@@ -13,6 +13,7 @@
   --text-xs: 1rem;
   --text-s: 1.4rem;
   --text-md: 2rem;
+  --text-lg: 2.2rem;
 }
 html {
   font-family: var(--font);
@@ -77,8 +78,8 @@ h6 {
   background-image: url(./images/pattern-bg.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: contain; 
-  position: relative; 
+  background-position: contain;
+  position: relative;
 }
 
 .img--container img {
@@ -149,6 +150,7 @@ h6 {
     margin: 0 auto;
   }
   .slide {
+    width: 100%;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
@@ -157,26 +159,26 @@ h6 {
     text-align: left;
   }
   .testimonial--info {
+    flex-direction: column;
     align-items: flex-start;
   }
   .testimonial--container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
+    width: 80%;
     margin-left: 4rem;
-    background-position: center 6.5rem;
+    background-position: left 1rem;
   }
   .img--container {
-    width: 480px;
-    height: 480px;
+    width: 500px;
+    height: 500px;
+    padding: 30px;
     background-size: contain;
-    background-position: center 60px;
+    background-position: center 95px;
     z-index: -1;
   }
-  .testimonial--container {
-    background-position: left 0.5rem;
-  }
+
   .img--container img {
     width: 100%;
     height: 100%;
@@ -189,28 +191,55 @@ h6 {
 }
 /*On Desktop view*/
 @media only screen and (min-width: 1000px) {
+  p {
+    font-size: var(--text-lg);
+    line-height: 3rem;
+  }
+  h5 {
+    font-size: var(--text-md);
+    margin-bottom: 1.5rem;
+  }
+  h6 {
+    font-size: var(--text-s);
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+  }
   .slider {
     justify-content: center;
     align-items: center;
   }
   .slide {
-    width: 100%;
-    padding: 0 6rem;
+    width: 90vw;
+  }
+  .testimonial--info {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .testimonial--container {
+    margin-right: -100px;
+    background-size: 100px;
+    background-position: left 0rem;
   }
   .img--container {
-    width: 600px;
-    height: 600px;
-    padding: 20px;
-    background-position: center 100px;
-    margin-left: -60px;
+    width: 750px;
+    height: 750px;
+    padding: 60px;
+    background-position: center;
   }
-  .img--container img{
+  .img--container img {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
   }
   .btn--container {
-    top: 580px;
+    top: 680px;
     transform: translateX(0);
-    left: calc(100% - 360px);
-    height: 3.2rem;
+    left: calc(100% - 550px);
+    height: 4.2rem;
+    width: 8.5rem;
+  }
+  .btn--container .btn {
+    padding: 1.5rem 1.7rem;
   }
 }
